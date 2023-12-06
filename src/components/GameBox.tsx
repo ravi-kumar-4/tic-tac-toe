@@ -56,7 +56,7 @@ export const GameBox = () => {
         })
     }
     const handleOnClick = (e: React.MouseEvent<HTMLElement>) => {
-       
+        e.preventDefault();
         if (e.currentTarget.innerText===''&& winner==='Progress...') {           
             setBoxes((b)=>{
                 const id = (e.target as HTMLButtonElement).id;
